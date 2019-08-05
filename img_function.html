@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+        <img onClick="javascript:getLoc()">
+        
+
+        <script>
+        function getLoc(){
+
+            var x = event.offsetX;
+            
+            var y = event.offsetY;
+            
+            alert("현재좌표는 : "+x+" / "+y);
+            
+            }
+            </script>
+            
+            
+
+     
+
+            <div class="shop01">
+                    <img src="img/sample_img1.png" alt="img sample" usemap="#plan01"/>
+                   <div id="linkA1" class="shoppop shop1"></div>
+                   <div id="linkA2" class="shoppop shop2"></div>
+                   <div id="linkA3" class="shoppop shop3"></div>
+                   <div id="linkA4" class="shoppop shop4"></div>
+                   <div id="linkA5" class="shoppop shop5"></div>
+                   <div id="linkA6" class="shoppop shop6"></div>
+                   <div id="linkA7" class="shoppop shop7"></div>
+                   <div id="linkA8" class="shoppop shop8"></div>
+                   <div id="linkA9" class="shoppop shop9"></div>
+                   <div id="linkA10" class="shoppop shop10"></div>
+         </div>
+         <map name="plan01" id="plan01" class="plan">
+                  <area shape="rect" coords="167,40,212,84" id="#linkA1" href="#"/>
+                  <area shape="rect" coords="212,40,256,84" id="#linkA2" href="#"/>
+                  <area shape="rect" coords="256,40,300,84" id="#linkA3" href="#"/>
+                  <area shape="rect" coords="299,40,344,84" id="#linkA4" href="#"/>
+                  <area shape="rect" coords="74,143,117,168" id="#linkA5" href="#"/>
+                  <area shape="rect" coords="72,86,101,123" id="#linkA6" href="#"/>
+                  <area shape="rect" coords="500,27,519,84" id="#linkA7" href="#"/>
+                  <area shape="rect" coords="381,144,521,168" id="#linkA8" href="#"/>
+                  <area shape="rect" coords="120,144,162,169" id="#linkA9" href="#"/>
+                  <area shape="rect" coords="410,27,500,84" id="#linkA10" href="#"/>
+         </map>
+    
+         <script>
+         $('area').mouseover(function(){
+            var showId = $(this).attr('id');
+            $(showId).show();
+       });
+       
+       $('area').mouseout(function(){
+            var hideId = $(this).attr('id');
+            $(hideId).hide();
+       });
+      
+      </script>
+   
+    
+
+         
+</body>
+</html>
