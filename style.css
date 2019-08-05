@@ -17,3 +17,34 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+p {
+    color:black;
+    background-color:blanchedalmond;
+    border: 2px solid none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: courier;
+
+}
+
+div {
+    color: black;
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
+}
