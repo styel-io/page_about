@@ -5,7 +5,13 @@
 <a href="serverside_img_map.html">
   <img src="img/sample_img1.png" alt="smp" width="400" height="600" ismap>
 </a>
+<script>
+  var link = document.location.href; 
+  console.log(link);
 
+  var para = document.location.href.split("?"); 
+  console.log(para);
+  </script>
 <p>Click the image, and the click coordinates will be sent to the server as a URL query string.</p>
 
 
