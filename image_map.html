@@ -2,29 +2,39 @@
 <html>
     <head>
         <meta charset="utf-8">
-        
+       <!-- refer this site for now, it's working at first time
+https://hackernoon.com/how-to-use-jquery-and-html5-map-tag-to-highlight-image-areas-on-mouseover-b7c728947ed3
+
+         -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+<script>
+$(function() {
+    $('.map').maphilight();
+});
+</script>
+
         <style>
-            a {
-                color:cornflowerblue;
-            }
+          area:hover {
+              border: 1px;
+              background-color:blueviolet;
+          }
         </style>
     </head>
 <body>
-           
+            <div>
+        <img src="img/sample_img1.png" usemap="#image-map" class="map">
+        <map name="image-map">
+            <area target="_blank" alt="cap" title="cap" href="https://store.musinsa.com/app/product/detail/410572/0" coords="237,82,21" shape="circle">
+    <area target="_blank" alt="backpack" title="backpack" href="https://store.musinsa.com/app/product/detail/938746/0" coords="345,314,31" shape="circle">
+    <area target="_blank" alt="pants" title="pants" href="https://store.musinsa.com/app/product/detail/560834/0" coords="254,416,27" shape="circle">
+    <area target="_blank" alt="snkr" title="snkr" href="https://store.musinsa.com/app/product/detail/695334/0" coords="252,682,21" shape="circle">
+        </map>
+    </div>
 
 <br>
 <br>
 <hr>
-
-
-<img src="img/sample_img1.png" usemap="#image-map">
-
-<map name="image-map">
-    <a><area target="_blank" alt="cap" title="cap" href="https://store.musinsa.com/app/product/detail/410572/0" coords="237,82,21" shape="circle"></a>
-    <area target="_blank" alt="backpack" title="backpack" href="https://store.musinsa.com/app/product/detail/938746/0" coords="345,314,31" shape="circle">
-    <area target="_blank" alt="pants" title="pants" href="https://store.musinsa.com/app/product/detail/560834/0" coords="254,416,27" shape="circle">
-    <area target="_blank" alt="snkr" title="snkr" href="https://store.musinsa.com/app/product/detail/695334/0" coords="252,682,21" shape="circle">
-</map>
 
 
     </body>
